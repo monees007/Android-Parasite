@@ -1,17 +1,11 @@
 import os
 
 import discord
-
-# *************************
-# sensitive data below -monees007
-TOKEN = 'ODU4MjUwODM1NzI0OTkyNTIz.YNbaYA.WwzZ9oPTNLASPbFJMYD8UV2R0ho'
-GUILD = 'Parasite'
+import credentials
 client = discord.Client()
-###########################
-
 @client.event
 async def on_ready():
-    guild = discord.utils.find(lambda g: g.name == GUILD, client.guilds)
+    guild = discord.utils.find(lambda g: g.name == credentials.GUILD, client.guilds)
     print(
         f'{client.user} is connected to the following guild:\n'
         f'{guild.name}(id: {guild.id})'
@@ -38,4 +32,4 @@ async def on_message(message):
         await message.channel.send(response)
 
 
-client.run(TOKEN)
+client.run(credentials.TOKEN)
