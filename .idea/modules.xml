@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Android-Parasite.iml" filepath="$PROJECT_DIR$/.idea/Android-Parasite.iml" />
       <module fileurl="file://$PROJECT_DIR$/next/next.iml" filepath="$PROJECT_DIR$/next/next.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk/trunk.iml" filepath="$PROJECT_DIR$/trunk/trunk.iml" />
     </modules>
   </component>
 </project>
